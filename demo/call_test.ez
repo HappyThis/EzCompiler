@@ -1,0 +1,30 @@
+class CallTest_0{
+
+    int a,b,c;
+
+    def CallTest_0 func_0(){
+        CallTest_0 instance;
+        return instance;
+    }
+
+    def CallTest_0 func_1(CallTest_0 p1,int p2,double p3){
+        CallTest_0 instance;
+        return instance;
+    }
+    def void CallTest_0(){
+        return ;
+    }
+
+}
+
+class call_test{
+
+    def void main(){
+        CallTest_0 T1;
+        T1 = new CallTest_0();
+        T1.a=T1.a+T1.b;
+        T1.a=T1.func_1(T1,1,1.6).func_0().a;
+        return ;
+    }
+
+}

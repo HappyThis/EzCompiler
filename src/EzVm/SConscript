@@ -1,0 +1,7 @@
+
+Import('target')
+
+c_target=target.Clone();
+
+
+c_target.Program('EzVm',[Glob('*.cpp')])

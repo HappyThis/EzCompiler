@@ -1,0 +1,25 @@
+class BreakTest {
+
+    def int sum() {
+        int from;
+        int to;
+        int sum;
+        while (from <= to) {
+            if (from >= 6) {
+                break;
+            } else { ;
+            }
+            sum = sum + from;
+            from = from + 1;
+        }
+        return sum;
+    }
+
+    def int main() {
+        int res;
+        res = sum();
+        return 0;
+    }
+
+}
+

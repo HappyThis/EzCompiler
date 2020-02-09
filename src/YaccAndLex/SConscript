@@ -1,0 +1,30 @@
+
+import os
+
+import shutil
+
+Import('target')
+
+if target.Detect('bison') and target.Detect('lex'):
+
+
+
+	os.system('bison EzCompiler.yacc -d -o EzCompiler.c')
+
+	os.system('lex EzCompiler.lex')
+
+	c_target=target.Clone();
+
+	c_target.Append(CPPPATH = ['#SymbolTable','#CodeContainer','#FillBack'])
+
+	c_target.Append(LIBPATH = ['#build/SymbolTable','#build/CodeContainer','#build/FillBack'])
+
+	c_target.Append(LIBS = [ 'fl','SymbolTable','CodeContainer','FillBack'])
+
+	c_target.Program(['EzCompiler.c'])
+
+
+	
+else:
+
+	print 'Error:bison or lex not be installed\n'

@@ -1,0 +1,34 @@
+
+
+import os
+import shutil
+
+try:
+	shutil.rmtree('build')
+
+except Exception as e:
+	pass
+
+target=Environment()
+
+target['CC']='g++'
+
+target.Append(CPPFLAGS=['-std=c++11'])
+
+Export('target')
+
+VariantDir('build/SymbolTable', '#SymbolTable', duplicate = 0)
+VariantDir('build/YaccAndLex', '#YaccAndLex', duplicate = 0)
+VariantDir('build/CodeContainer', '#CodeContainer', duplicate = 0)
+VariantDir('build/FillBack', '#FillBack', duplicate = 0)
+VariantDir('build/EzVm', '#EzVm', duplicate = 0)
+
+SConscript('build/YaccAndLex/SConscript')
+SConscript('build/SymbolTable/SConscript')
+SConscript('build/CodeContainer/SConscript')
+SConscript('build/FillBack/SConscript')
+SConscript('build/EzVm/SConscript')
+
+os.makedirs('build/YaccAndLex')
+
+

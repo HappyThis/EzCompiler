@@ -1,0 +1,66 @@
+
+
+class Point{
+	int __x;
+	int __y;
+	def void Point(){
+	__x=0;
+	__y=0;
+	return;
+	}
+	def void SetX(int x){
+	__x=x;
+	return;
+	}
+	def void SetY(int y){
+	__y=y;
+	return;
+	}
+}
+
+
+class Show{
+
+/*max-Function*/
+def int max(int x,int y){
+	int result;
+	if(x>y){
+		result=x;
+	}else{
+		result=y;
+	}
+	return result;
+}
+/*++*/
+def int addSelf(int x){
+	return x+1;
+}
+/*--*/
+def int subSelf(int x){
+	return x-1;
+}
+
+def void main(){
+	int a,b,c;
+	a=1;
+	b=2;
+	c=3;
+	int result;
+	result=max(a,max(b,c));
+	while(result){
+	result=subSelf(result);
+	}
+	Point point1,point2;
+	point1=new Point();
+	point2=point1;
+	if(point1==point2){
+	point2=new Point();
+	}else{
+		while(a){
+		a=subSelf(a);
+	}
+	}
+	return;
+}
+
+}

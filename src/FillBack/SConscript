@@ -1,0 +1,9 @@
+
+Import('target')
+
+c_target=target.Clone();
+
+c_target.Append(CPPPATH = ['#CodeContainer','#SymbolTable'])
+
+
+c_target.Library('FillBack',[Glob('*.cpp')])
