@@ -53,6 +53,6 @@
 ![demo0](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo0.png)
 ![demo1](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo1.png)
 ![demo2](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo2.png)
-![demo3](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/deme3.png)
+![demo3](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo3.png)
 ![demo4](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo4.png)
-![demo5](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/deme5.png)
+![demo5](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo5.png)
