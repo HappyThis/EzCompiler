@@ -39,6 +39,16 @@
 + val_types: val_type V_ID | val_types	S_COM	val_type V_ID
 + stat: S_SEM | exp S_SEM	| ctrl_stat | cmpd_stat
 ---
+#### 项目构建
++ 项目采用scons
++ 在src下输入scons即可构建(需要有bison和flex)
++ 项目没有做跨平台,但就项目本身来说和平台关系不是很大
+---
+#### 这次没做好的点
+1. 不知道是不是yacc本身的问题，我认为yacc会增加项目的耦合度。
+2. 对于c++来说，任何不改变成员变量的函数都应该定义为const。const会减少项目出错风险
+3. 实际上我不想仅仅使用c with class或者c with stl的编程方式，想要有意识地使用魔板，但在这个项目中确实没用到。
+---
 #### 编译效果
 ![demo0](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo0.png)
 ![demo1](https://github.com/HappyThis/EzCompiler/blob/master/screenshot/demo1.png)
